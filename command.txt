@@ -1,0 +1,28 @@
+docker -v
+docker run hello-world
+docker run busybox ping google.com
+docker stop 469f60dc2879
+
+cd Docker_Bootcamp
+
+docker pull busybox
+docker create busybox ping google.com
+docker start 4dbc51a9ef05e6fc25fc5ad1ddae0a60ef0c04d8a4a331ef526b82bb46d86eee
+docker stop 4dbc51a9ef05e6fc25fc5ad1ddae0a60ef0c04d8a4a331ef526b82bb46d86eee
+docker system prune
+docker run nginx
+
+docker exec 5da662c97d42 ls
+docker exec -it 5da662c97d42 sh
+docker exec -it 5da662c97d42 bash
+
+docker stop 5da662c97d42
+docker rm 5da662c97d42
+docker run -p 80:80 nginx
+
+docker run -p 8800:80 nginx
+docker run -d -p 7800:80 nginx
+
+docker info
+docker images
+docker system df
